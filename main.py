@@ -45,6 +45,8 @@ if day_of_week == 0:
                                 msg=f"Subject:Monday Motivation\n\nHello Sunshine, here's your Monday dose of "
                                     f"motivation.\n\n{quote}\n\nHappy New Week!")
 
+            # Host on the cloud to ensure it runs daily, i used PythonAnywhere
+            # Link on ReadMe
 
 
 
