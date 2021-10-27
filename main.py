@@ -7,6 +7,11 @@ year = now.year
 month = now.month
 # Get the day of week i.e 0 for Monday
 day_of_week = now.weekday()
+# Make sure you've got the correct smtp address for your email provider
+# Gmail: smtp.gmail.com
+# Hotmail: smtp.live.com
+# Outlook: outlook.office365.com
+# Yahoo: smtp.mail.yahoo.com
 if day_of_week == 0:
     with open("quotes.txt") as f:
         lines = f.readlines()
@@ -16,8 +21,23 @@ if day_of_week == 0:
         quote = quote.strip()
         my_email = "misslynnemunini@gmail.com"
         # Enter the email password for your account here
-        # Removed mine for security purposes
+        # Removed my password for security purposes, for the code to work enter you account password below
+        # This method only applies to gmail account
+        # For Yahoo and hotmail accounts i'll share on the ReadMe
+        # Very Important to Note as an error might occur
+        # Google has a security feature that prevents less secure apps (The Program), from accessing your account
+        # You have to turn this off manually by logging into your account, heading over to Security, Scroll down to
+        # Less secure apps access and turn that on, A critical alert will be sent to your email
+        # I highly recommend not using your official google account for this program,
+        # make a new account to just do this.
+        # Also don't hesitate to shoot me a dm on Twitter incase of any questions, @lynnemunini
+        # That said, enter your account password below
         password = ""
+        # Make sure you've got the correct smtp address for your email provider
+        # Gmail: smtp.gmail.com
+        # Hotmail: smtp.live.com
+        # Outlook: outlook.office365.com
+        # Yahoo: smtp.mail.yahoo.com
         with smtplib.SMTP("smtp.gmail.com", port=587) as connection:
             connection.starttls()
             connection.login(user=my_email, password=password)
