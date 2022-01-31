@@ -35,7 +35,7 @@ if day_of_week == 0:
         # while logged in to the Gmail account: https://accounts.google.com/DisplayUnlockCaptcha
         # Also don't hesitate to shoot me a dm on Twitter incase of any questions, @lynnemunini
         # That said, enter your account password below
-        password = "@26041978"
+        password = ""
         # Make sure you've got the correct smtp address for your email provider
         # Gmail: smtp.gmail.com
         # Hotmail: smtp.live.com
