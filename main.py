@@ -37,6 +37,7 @@ if day_of_week == 0:
         # Also don't hesitate to shoot me a dm on Twitter incase of any questions, @lynnemunini
         # That said, enter your account password below
         password = ""
+        print (password)
         # Make sure you've got the correct smtp address for your email provider
         # Gmail: smtp.gmail.com
         # Hotmail: smtp.live.com
@@ -51,3 +52,4 @@ if day_of_week == 0:
 
             # Host on the cloud to ensure it runs daily, i used PythonAnywhere
             # Link on ReadMe
+
