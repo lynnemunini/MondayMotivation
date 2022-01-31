@@ -34,7 +34,6 @@ if day_of_week == 0:
         # If you still get errors at this point
         # Try to go through the Gmail Captcha here
         # while logged in to the Gmail account: https://accounts.google.com/DisplayUnlockCaptcha
-        # Also don't hesitate to shoot me a dm on Twitter incase of any questions, @lynnemunini
         # That said, enter your account password below
         password = ""
         print (password)
