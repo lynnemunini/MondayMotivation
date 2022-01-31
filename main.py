@@ -15,6 +15,7 @@ day_of_week = now.weekday()
 if day_of_week == 0:
     with open("quotes.txt") as f:
         lines = f.readlines()
+        print(lines[0])
         # To select random quote from the quotes.txt file
         quote = random.choice(lines)
         # Remove black line after quote
@@ -50,6 +51,3 @@ if day_of_week == 0:
 
             # Host on the cloud to ensure it runs daily, i used PythonAnywhere
             # Link on ReadMe
-
-
-
